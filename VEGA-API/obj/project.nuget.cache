@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/hzAdufGtaaNpc+KT/SXOmDBEzJ/a29lOZuoMdsf7KGSngfbdhSUW/kJzUer9oxWs0jcgjoMKWuudeXrN6u5cg==",
+  "success": true,
+  "projectFilePath": "I:\\VEGA\\VEGA-API\\VEGA-API\\VEGA-API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Minimum.CHARON\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
