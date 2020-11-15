@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VEGA_API.Database
 {
-    public class Flag
+    public class VegaFlag
     {
         public int Id { get; set; }
         [StringLength(32, ErrorMessage = "The {0} value cannot exceed {1} characters.")]
