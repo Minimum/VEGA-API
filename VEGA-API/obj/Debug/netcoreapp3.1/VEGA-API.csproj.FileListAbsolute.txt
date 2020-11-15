@@ -7,3 +7,6 @@ I:\VEGA\VEGA-API\VEGA-API\obj\Debug\netcoreapp3.1\VEGA-API.AssemblyInfo.cs
 I:\VEGA\VEGA-API\VEGA-API\obj\Debug\netcoreapp3.1\VEGA-API.RazorTargetAssemblyInfo.cache
 I:\VEGA\VEGA-API\VEGA-API\obj\Debug\netcoreapp3.1\staticwebassets\VEGA-API.StaticWebAssets.Manifest.cache
 I:\VEGA\VEGA-API\VEGA-API\obj\Debug\netcoreapp3.1\staticwebassets\VEGA-API.StaticWebAssets.xml
+I:\VEGA\VEGA-API\VEGA-API\bin\Debug\netcoreapp3.1\VEGA-API.exe
+I:\VEGA\VEGA-API\VEGA-API\bin\Debug\netcoreapp3.1\Npgsql.dll
+I:\VEGA\VEGA-API\VEGA-API\obj\Debug\netcoreapp3.1\VEGA-API.csproj.CopyComplete

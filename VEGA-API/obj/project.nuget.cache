@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/hzAdufGtaaNpc+KT/SXOmDBEzJ/a29lOZuoMdsf7KGSngfbdhSUW/kJzUer9oxWs0jcgjoMKWuudeXrN6u5cg==",
+  "dgSpecHash": "AlCjudVxtTgKm/26NWUuzGt5b5+oY0ybKY0OYuymHwohgHdoW2Lp/8nyeuOU+Qh6Z/dYt0R/V55CzuvdDtR8Cw==",
   "success": true,
   "projectFilePath": "I:\\VEGA\\VEGA-API\\VEGA-API\\VEGA-API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Minimum.CHARON\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+    "C:\\Users\\Minimum.CHARON\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\Minimum.CHARON\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Minimum.CHARON\\.nuget\\packages\\npgsql\\4.1.5\\npgsql.4.1.5.nupkg.sha512",
+    "C:\\Users\\Minimum.CHARON\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
   ],
   "logs": []
 }
