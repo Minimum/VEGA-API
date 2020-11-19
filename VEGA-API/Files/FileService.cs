@@ -9,11 +9,11 @@ namespace VEGA_API.Files
 {
     public sealed class FileService
     {
-        private FileDal dal { get; set; }
+        private FileDal Dal { get; set; }
 
         public FileService()
         {
-            dal = new FileDal();
+            Dal = new FileDal();
         }
 
         public void CreateFile(File file)
@@ -38,12 +38,12 @@ namespace VEGA_API.Files
 
         public void SaveData(File file, Volume volume, Stream data)
         {
-            dal.SaveFile(GetFilePath(file, volume), data);
+            Dal.SaveFile(GetFilePath(file, volume), data);
         }
 
         public Stream LoadData(File file, Volume volume)
         {
-            return dal.LoadFile(GetFilePath(file, volume));
+            return Dal.LoadFile(GetFilePath(file, volume));
         }
 
         public String GetFilePath(File file, Volume volume)

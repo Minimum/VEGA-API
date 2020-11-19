@@ -35,8 +35,8 @@ namespace VEGA_API.Database
 
         // Action Variables
         public bool RequireAuthentication { get; set; }
-        public int? AuthSchema { get; set; }
-        public long? AuthPermission { get; set; }
+        public int? AuthSystem { get; set; }
+        public long? AuthPrivilege { get; set; }
 
         // Error Variables
         [JsonProperty]
@@ -49,8 +49,8 @@ namespace VEGA_API.Database
             Connection = new NpgsqlConnection(VegaConfig.Instance.DataConnectionString);
 
             RequireAuthentication = true;
-            AuthSchema = null;
-            AuthPermission = null;
+            AuthSystem = null;
+            AuthPrivilege = null;
 
             ErrorCode = "";
             ErrorMessage = "";
@@ -63,8 +63,8 @@ namespace VEGA_API.Database
             Connection = new NpgsqlConnection(VegaConfig.Instance.DataConnectionString);
 
             RequireAuthentication = true;
-            AuthSchema = null;
-            AuthPermission = null;
+            AuthSystem = null;
+            AuthPrivilege = null;
 
             ErrorCode = "";
             ErrorMessage = "";
@@ -77,8 +77,8 @@ namespace VEGA_API.Database
             Connection = new NpgsqlConnection(VegaConfig.Instance.DataConnectionString);
 
             RequireAuthentication = true;
-            AuthSchema = null;
-            AuthPermission = null;
+            AuthSystem = null;
+            AuthPrivilege = null;
 
             ErrorCode = "";
             ErrorMessage = "";
@@ -91,8 +91,8 @@ namespace VEGA_API.Database
             Connection = new NpgsqlConnection(VegaConfig.Instance.DataConnectionString);
 
             RequireAuthentication = true;
-            AuthSchema = null;
-            AuthPermission = null;
+            AuthSystem = null;
+            AuthPrivilege = null;
 
             ErrorCode = "";
             ErrorMessage = "";
@@ -142,15 +142,15 @@ namespace VEGA_API.Database
 
             Transaction = Connection.BeginTransaction();
 
-            NpgsqlCommand cmd = new NpgsqlCommand("SELECT * FROM pl_system.fn_start_transaction(@session_id, @session_token, @address, @environment_info, @require_auth, @auth_schema, @auth_permission);", Connection, Transaction);
+            NpgsqlCommand cmd = new NpgsqlCommand("SELECT * FROM pl_system.fn_start_transaction(@session_id, @session_token, @address, @environment_info, @require_auth, @auth_system, @auth_privilege);", Connection, Transaction);
 
             cmd.Parameters.AddWithValue("session_id", SessionId);
             cmd.Parameters.AddWithValue("session_token", SessionToken);
             cmd.Parameters.AddWithValue("address", Address);
             cmd.Parameters.AddWithValue("environment_info", GetEnvironmentInfo());
             cmd.Parameters.AddWithValue("require_auth", RequireAuthentication);
-            cmd.Parameters.AddWithValue("auth_schema", NpgsqlTypes.NpgsqlDbType.Integer, AuthSchema);
-            cmd.Parameters.AddWithValue("auth_permission", NpgsqlTypes.NpgsqlDbType.Integer, AuthPermission);
+            cmd.Parameters.AddWithValue("auth_system", NpgsqlTypes.NpgsqlDbType.Integer, AuthSystem);
+            cmd.Parameters.AddWithValue("auth_privilege", NpgsqlTypes.NpgsqlDbType.Integer, AuthPrivilege);
 
             try
             {
@@ -494,14 +494,14 @@ namespace VEGA_API.Database
 
         public void SetDataError()
         {
-            SetError("API-00001", "Sorry, the API is currently experiencing issues.");
+            SetError(VegaRules.ErrorGeneral, "Sorry, the API is currently experiencing issues.");
 
             return;
         }
 
         public void SetAccessError()
         {
-            SetError("API-00002", "Access denied.");
+            SetError(VegaRules.ErrorAccess, "Access denied.");
 
             return;
         }

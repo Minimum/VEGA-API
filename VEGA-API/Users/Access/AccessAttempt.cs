@@ -6,7 +6,7 @@ using System.Net;
 using System.Threading.Tasks;
 using VEGA_API.Database;
 
-namespace VEGA_API.Users
+namespace VEGA_API.Users.Access
 {
     public class AccessAttempt : VegaObject
     {
