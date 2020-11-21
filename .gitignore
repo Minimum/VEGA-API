@@ -1,0 +1,8 @@
+/VEGA-API/bin/**
+/VEGA-API/obj/**
+
+/VEGA-Data/bin/**
+/VEGA-Data/obj/**
+
+/Tests/bin/**
+/Tests/obj/**

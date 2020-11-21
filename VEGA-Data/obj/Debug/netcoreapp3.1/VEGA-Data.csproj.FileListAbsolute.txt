@@ -1,9 +1,0 @@
-I:\VEGA\VEGA-API\VEGA-Data\bin\Debug\netcoreapp3.1\VEGA-Data.deps.json
-I:\VEGA\VEGA-API\VEGA-Data\bin\Debug\netcoreapp3.1\VEGA-Data.dll
-I:\VEGA\VEGA-API\VEGA-Data\obj\Debug\netcoreapp3.1\VEGA-Data.csprojAssemblyReference.cache
-I:\VEGA\VEGA-API\VEGA-Data\obj\Debug\netcoreapp3.1\VEGA-Data.AssemblyInfoInputs.cache
-I:\VEGA\VEGA-API\VEGA-Data\obj\Debug\netcoreapp3.1\VEGA-Data.AssemblyInfo.cs
-I:\VEGA\VEGA-API\VEGA-Data\obj\Debug\netcoreapp3.1\VEGA-Data.csproj.CoreCompileInputs.cache
-I:\VEGA\VEGA-API\VEGA-Data\bin\Debug\netcoreapp3.1\VEGA-Data.pdb
-I:\VEGA\VEGA-API\VEGA-Data\obj\Debug\netcoreapp3.1\VEGA-Data.dll
-I:\VEGA\VEGA-API\VEGA-Data\obj\Debug\netcoreapp3.1\VEGA-Data.pdb
