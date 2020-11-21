@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using VEGA_API.Database;
-using VEGA_API.Users;
+using VEGA_Data.Database;
+using VEGA_Data.Users;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -23,7 +24,7 @@ namespace VEGA_API.Controllers.Rest.User
         [HttpGet]
         public String Get()
         {
-            VegaTransaction transaction = new VegaTransaction(this)
+            VegaHttpTransaction transaction = new VegaHttpTransaction(this)
             {
                 AuthSystem = UserService.System,
                 AuthPrivilege = PvSelectUser
@@ -31,7 +32,7 @@ namespace VEGA_API.Controllers.Rest.User
 
             if(transaction.Initialize() == VegaTransactionInitStatus.Success)
             {
-                UserService service = new UserService();
+                UserService service = new UserService(transaction);
             }
 
             return transaction.EndTransaction();
@@ -41,7 +42,7 @@ namespace VEGA_API.Controllers.Rest.User
         [HttpGet("{id}")]
         public string Get(long id)
         {
-            VegaTransaction transaction = new VegaTransaction(this)
+            VegaHttpTransaction transaction = new VegaHttpTransaction(this)
             {
                 AuthSystem = UserService.System,
                 AuthPrivilege = PvSelectUser
@@ -49,7 +50,7 @@ namespace VEGA_API.Controllers.Rest.User
             
             if (transaction.Initialize() == VegaTransactionInitStatus.Success)
             {
-                UserService service = new UserService();
+                UserService service = new UserService(transaction);
 
                 if (service.ValidateUserId(id))
                 {

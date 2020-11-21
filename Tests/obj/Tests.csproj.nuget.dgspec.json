@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "I:\\VEGA\\VEGA-API\\VEGA-API\\VEGA-API.csproj": {}
+    "I:\\VEGA\\VEGA-API\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "I:\\VEGA\\VEGA-API\\VEGA-API\\VEGA-API.csproj": {
+    "I:\\VEGA\\VEGA-API\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "I:\\VEGA\\VEGA-API\\VEGA-API\\VEGA-API.csproj",
-        "projectName": "VEGA-API",
-        "projectPath": "I:\\VEGA\\VEGA-API\\VEGA-API\\VEGA-API.csproj",
+        "projectUniqueName": "I:\\VEGA\\VEGA-API\\Tests\\Tests.csproj",
+        "projectName": "Tests",
+        "projectPath": "I:\\VEGA\\VEGA-API\\Tests\\Tests.csproj",
         "packagesPath": "C:\\Users\\Minimum.CHARON\\.nuget\\packages\\",
-        "outputPath": "I:\\VEGA\\VEGA-API\\VEGA-API\\obj\\",
+        "outputPath": "I:\\VEGA\\VEGA-API\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Minimum.CHARON\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,17 +42,21 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+            "MSTest.TestAdapter": {
               "target": "Package",
-              "version": "[1.10.9, )"
+              "version": "[2.1.0, )"
             },
-            "Newtonsoft.Json": {
+            "MSTest.TestFramework": {
               "target": "Package",
-              "version": "[12.0.3, )"
+              "version": "[2.1.0, )"
             },
-            "Npgsql": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[4.1.5, )"
+              "version": "[16.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             }
           },
           "imports": [
@@ -66,9 +70,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

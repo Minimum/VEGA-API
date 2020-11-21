@@ -38,6 +38,20 @@
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
+      },
+      "VEGA-Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "Npgsql": "4.1.5"
+        },
+        "compile": {
+          "bin/placeholder/VEGA-Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VEGA-Data.dll": {}
+        }
       }
     }
   },
@@ -181,13 +195,19 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "VEGA-Data/1.0.0": {
+      "type": "project",
+      "path": "../VEGA-Data/VEGA-Data.csproj",
+      "msbuildProject": "../VEGA-Data/VEGA-Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.9",
       "Newtonsoft.Json >= 12.0.3",
-      "Npgsql >= 4.1.5"
+      "Npgsql >= 4.1.5",
+      "VEGA-Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -215,7 +235,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "I:\\VEGA\\VEGA-API\\VEGA-Data\\VEGA-Data.csproj": {
+              "projectPath": "I:\\VEGA\\VEGA-API\\VEGA-Data\\VEGA-Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
